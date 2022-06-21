@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55% );
+    --Dark-blue: hsl(223, 47%, 23%);
+    
+}
+body{
+    background: url(/images/pattern-background-desktop.svg), var(--Pale-blue);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: .5px;
+    padding: 3%;
+    width: 100%;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.container{
+    box-shadow: 3px 4px 5px var(--Pale-blue);
+    border-radius: 20px;
+    width: 25%;
+    margin-left: 35%;
+    background: white;
+}
+.header img{
+    width: 100%;
+    height: 5%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+h1{
+    margin-left: 25%;
+    margin-top: 5%;
+    opacity: 80%;
+    font-weight: 900;
+    color: var(--Dark-blue);
+    font-size: 25px;
+}
+.para{
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+    opacity: 60%;
+    font-weight: 600;
+}
+.annual{
+    display: flex;
+    gap : 2%;
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    box-shadow: 1px 1px 1px var(--Pale-blue);
+    background: var(--Very-pale-blue);
+    padding: 4%;
+    border-radius: 10px;
+}
+.annual img{
+    margin-top: 2%;
+     width: 20%;
+     height: 15%;
+}
+.plan{
+    margin-left: 3%;
+}
+.plan h3{
+    margin-top: 10%;
+    width: 100%;
+    font-size: 14px;
+    opacity: 85%;
+    font-weight: 900;
+    margin-left: 3%;
+}
+.plan p{
+    width: 80%;
+    opacity: 80%;
+    font-weight: 600;
+}
+ .annual a{
+    margin-top: 7%;
+    margin-left: 6%;
+    color: var(--Bright-blue);
+    font-weight: 600;
+}
+.annual a:hover{
+    color: var(--Bright-blue);
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 80%;
+}
+.proceed{
+    box-shadow: 1px 1px 1px var(--Bright-blue);
+    width: 80%;
+    height: 50%;
+    padding: 8px;
+    margin-top: 8%;
+    margin-left: 10%;
+    background: var(--Bright-blue);
+    text-align: center;
+    border-radius: 7px;
+}
+.proceed:hover{
+    opacity: 85%;
+    cursor: pointer;
+}
+.proceed a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 900;
+}
+.cancel{
+    text-align: center;
+    padding: 5%;
+}
+.cancel a{
+    text-decoration: none;
+    opacity: 70%;
+    color: black;
+    font-weight: 800;
+}
+.cancel a:hover{
+    cursor: pointer;
+    opacity: 100%;
+}
+footer{
+    text-align: center;
+    margin: 1.5%;
+    padding: 2%;
+    font-weight: 800;
+}
+@media(max-width:2560px){
+    .container{
+        width: 20%;
+        margin-top: 15%;
+    }
+    h1{
+        margin-left: 15%;
+    }
+    .para{
+        margin-left: 8%;
+        font-size: 100%;
+        width: 85%;
+    }
+    footer{
+        margin-left: -15%;
+    }
+}
+@media(max-width:1440px){
+    .container{
+        width: 25%;
+    }
+}
+@media(max-width:1024px){
+    .container{
+        width: 35%;
+    }
+}
+@media(max-width:768px){
+    .container{
+        width: 50%;
+    }
+}
+@media(max-width:500px){
+    body{
+        background: url(/images/pattern-background-mobile.svg), var(--Pale-blue);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 10%;
+    }
+    .container{
+        width: 75%;
+        margin-left: 15%;
+    }
+    footer{
+        margin-left: 5%;
+    }
+}
+@media(max-width:375px){
+    .container{
+        width: 85%;
+        margin-left: 8%;
+    }
+    .annual a{
+        margin-left: 5%;
+    }
+}
+@media(max-width:250px){
+    .container{
+        width: 99%;
+        margin-left: 0%;
+    }
+    h1{
+        font-size: 22px;
+        margin-left: 15%;
+    }
+    .para{
+        font-size: 12px;
+    }
+    .annual img{
+        width: 25%;
+    }
+    .plan{
+        width: 40%;
+        margin-top: 2%;
+        margin-left: 3%;
+    }
+    .plan h3{
+        font-size: 10px;
+    }
+    .plan p{
+        font-size: 10px;
+    }
+    .annual a{
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+    footer{
+        margin-left: 2%;
+    }
+}
